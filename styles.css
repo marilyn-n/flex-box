@@ -10,7 +10,7 @@
 	width: 68vw;
 	height: 10vh;
 	background-color: aquamarine;
-	display: inline-block;
+	display: inline-flex;
 }
 
 #slider{
@@ -21,7 +21,7 @@
 }
 
 .blocks, .block{
-	display: inline-block;
+	display: inline-flex;
 	position: relative;
 	margin: 8px;
 	width: 25vw;
