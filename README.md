@@ -1,6 +1,14 @@
-# Responsive Layouts 
-Layout design adapt to any possible screen size using responsive CSS and carefully crafted HTML.
+# Flex-box | Responsive Layouts 
 
-One way to do this is to replace `px` measurements in css files with `vh` and `vw` percentages of the browser size. 
+An elegant layout method for civilized markups.
+
+Flexbox is a new layout mode in CSS3. The previous version of CSS defined four layout modes:
+
+* block layout for laying out documents
+* inline layout for laying out text
+* table layout for laying 2D tabular data
+* positioned layout for explicit positioning
+
+[More about it](https://spaceninja.com/2015/08/24/what-is-flexbox/)
 
 
