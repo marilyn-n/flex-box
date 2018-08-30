@@ -36,30 +36,23 @@ a:hover {
 	color: rgb(61, 194, 255);
 }
 
-#slider {
-	margin: 8px 8px;
-	width: 91vw;
-	height: 35vh;
-	background-color: red;
-}
-
-.blocks, .block {
-	position: relative;
-	margin: 8px 8px;
-	width: 90vw;
-	height: 10vh;
-	background-color: yellow;
-	border: solid;
-}
-
-#footer {
-	margin: 8px 8px;
-	border-top: 5px solid black;
-	width: 92vw;
-	height: 13vh;
-	background-color: darkgray;
+.slide > img{
+	width: 100%;
+	height: 100%;
+	margin-top: 5px;
 }
 
 .container {
 	display: flex;
+	height: 150px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container > .box {
+	margin: 5px 0 5px 0;
+	background-color: teal;
+	width: 400px;
+  height: 150px; 
+	/* margin: auto; */
 }
