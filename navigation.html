@@ -8,21 +8,111 @@
   <title>Navigation bar</title>
 </head>
 <body>
-
-  <nav>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
-      <li>Item 6</li>
-      <li><i class="fab fa-github"></i></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </nav>
+    <div class="wrapper">
   
+      <nav class="flex-nav">
+        <ul>
+          <li>
+            <a href="#">Item 01</a>
+          </li>
+          <li>
+            <a href="#">Item 02</a>
+          </li>
+          <li>
+            <a href="#">Item 03</a>
+          </li>
+          <li>
+            <a href="#">Item 04</a>
+          </li>
+          <li>
+            <a href="#">Item 05</a>
+          </li>
+          <li>
+            <a href="#">Item 06</a>
+          </li>
+          <li class="social">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
+    </div>
+
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+    
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+    
+        body {
+          font-family: sans-serif;
+          margin: 0;
+          background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+        }
+    
+        a {
+          color:white;
+          font-weight: 100;
+          letter-spacing: 2px;
+          text-decoration: none;
+          background:rgba(0,0,0,0.2);
+          padding:20px 5px;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          transition:all 0.5s;
+        }
+    
+        a:hover {
+          background:rgba(0,0,0,0.3);
+        }
+    
+        .wrapper {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding:50px;
+        }
+    
+    
+        /* Flex Container */
+        .flex-nav ul {
+          border:1px solid black;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          
+        }
+    
+    
+        @media all and (max-width:1000px) {
+          
+    
+        }
+    
+        @media all and (max-width:500px) {
+          
+    
+        }
+      </style>
 </body>
 </html>
