@@ -4,115 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/2254236907.js" crossorigin="anonymous"></script>
-  <title>Navigation bar</title>
+  <link rel="stylesheet" href="flex-box.css">
+  <title>FlexBox</title>
 </head>
 <body>
     <div class="wrapper">
   
-      <nav class="flex-nav">
+    <nav class="flex-nav">
         <ul>
-          <li>
-            <a href="#">Item 01</a>
-          </li>
-          <li>
-            <a href="#">Item 02</a>
-          </li>
-          <li>
-            <a href="#">Item 03</a>
-          </li>
-          <li>
-            <a href="#">Item 04</a>
-          </li>
-          <li>
-            <a href="#">Item 05</a>
-          </li>
-          <li>
-            <a href="#">Item 06</a>
-          </li>
-          <li class="social">
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="social">
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li class="social">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li class="social">
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
+			<li>
+				<a href="#">Item 01</a>
+			</li>
+			<li>
+				<a href="#">Item 02</a>
+			</li>
+			<li>
+				<a href="#">Item 03</a>
+			</li>
+			<li>
+				<a href="#">Item 04</a>
+			</li>
+			<li>
+				<a href="#">Item 05</a>
+			</li>
+			<li>
+				<a href="#">Item 06</a>
+			</li>
+			<li class="social">
+				<a href="#">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li class="social">
+				<a href="#">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li class="social">
+				<a href="#">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+			<li class="social">
+				<a href="#">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
         </ul>
-      </nav>
+	</nav>
+	  
+	<section class="hero">
+		<img src="http://lorempixel.com/1000/600/abstract">
+	</section>
+	
+	<section class="details">
+		<p>A simple video course to help you master FlexBox.</p>
+		<p>Sign up today to grab all the videos and exercises!</p>
+	</section>
+	
+	<section class="signup">
+		<form action="" class="signup">
+			<input type="text" placeholder="Your Name">
+			<input type="email" placeholder="Email Address">
+			<input type="submit" value="Sign me up!">
+		</form>
+	</section>
+	
+	<footer>
+		<p>&copy; Wes Bos</p>
+	</footer>
   
     </div>
 
-    <style>
-        html {
-          box-sizing: border-box;
-        }
-    
-        *, *:before, *:after {
-          box-sizing: inherit;
-        }
-    
-        body {
-          font-family: sans-serif;
-          margin: 0;
-          background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-        }
-    
-        a {
-          color:white;
-          font-weight: 100;
-          letter-spacing: 2px;
-          text-decoration: none;
-          background:rgba(0,0,0,0.2);
-          padding:20px 5px;
-          display: inline-block;
-          width: 100%;
-          text-align: center;
-          transition:all 0.5s;
-        }
-    
-        a:hover {
-          background:rgba(0,0,0,0.3);
-        }
-    
-        .wrapper {
-          max-width: 1000px;
-          margin: 0 auto;
-          padding:50px;
-        }
-    
-    
-        /* Flex Container */
-        .flex-nav ul {
-          border:1px solid black;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          
-        }
-    
-    
-        @media all and (max-width:1000px) {
-          
-    
-        }
-    
-        @media all and (max-width:500px) {
-          
-    
-        }
-      </style>
+	<script src="https://kit.fontawesome.com/2254236907.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+	  
+	  $(function() {
+		$('.toggleNav').on('click',function() {
+		  $('.flex-nav ul').toggleClass('open');
+		});
+	  });
+	</script>
 </body>
 </html>
