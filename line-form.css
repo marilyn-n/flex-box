@@ -68,21 +68,23 @@ a {
 }
 
 /*Flexbox Starts Here*/
+  .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.cover {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-
-.flex-form {
-  display:flex;
+ .flex-form {
+   display: flex;
   border:20px solid rgba(0,0,0,0.3);
   border-radius:5px;
 }
 
+label {
+  flex-basis: 10%;
+  text-align: center;
+}
 
 input[type="search"] {
-  flex-basis:500px;
+  flex-basis: 35%;
 }
